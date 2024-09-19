@@ -74,7 +74,7 @@ Setup for ESP32-S3 boards to make a BLE-enabled USB Rubber Ducky.
    - After 2-3 minutes, an BLE device named `BLEDuck` is discovered.
 6. Turn on your mobile bluetooth.
 7. Open `Serial Bluetooth Terminal` app.
-8. Click on ![image](https://github.com/user-attachments/assets/765b598b-cb2f-4144-94ea-c9ab1840a8be).
+8. Click on ☰.
 9. Click on `Devices`.
 10. Click on `Bluetooth LE`.
 11. Click on `Scan`.
