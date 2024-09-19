@@ -35,4 +35,6 @@ Setup for ESP32-S3 boards to make a BLE-enabled USB Rubber Ducky.
 21. Select the `combined.bin` file.
 22. Click on `Program` button.
 23. Wait for sometimes and after successfully flashed, press and release the `RST` button.
-24. Done! Now, ESP32-S3 Board is ready to flash CircuitPython `.uf2` file.
+24. Plug-out and then plug-in the USB cable.
+   - When it connects, then ESP32-S3 board as a removable storage device named like this `S3DKC1BOOT`.
+25. Done! Now, ESP32-S3 Board is ready to flash CircuitPython `.uf2` file.
