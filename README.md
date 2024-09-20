@@ -12,6 +12,9 @@ Setup for ESP32-S3 boards to make a BLE-enabled USB Rubber Ducky.
 - Windows 10
 - Android
 
+# Recommended
+- Use those ESP32-S3 boards which has at least `8MB` flash memory.
+
 # Setup of ESP32-S3
 1. Open Official CircuitPython download link from [here](https://circuitpython.org/downloads).
 2. Search `ESP32-S3`.
@@ -76,7 +79,7 @@ Setup for ESP32-S3 boards to make a BLE-enabled USB Rubber Ducky.
    - After 2-3 minutes, an BLE device named `BLEDuck` is discovered.
 6. Turn on your mobile bluetooth.
 7. Open `Serial Bluetooth Terminal` app.
-8. Click on ☰.
+8. Click on `☰`.
 9. Click on `Devices`.
 10. Click on `Bluetooth LE`.
 11. Click on `Scan`.
