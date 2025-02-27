@@ -59,7 +59,8 @@ Setup for ESP32-S2 & S3 boards to make a BLE-enabled USB Rubber Ducky.
 7. Extarct the ZIP file.
 8. Go to the `lib` folder in the extracted ZIP file.
 9. Copy `adafruit_ble` and `adafruit_hid` folders in the `lib` folder of `CIRCUITPY`.
-10. Done! Now, `ESP32-S2` or `ESP32-S3` board is ready to use as a BLEDuck.
+10. Create a folder named `payloads` in `CIRCUITPY`.
+11. Done! Now, `ESP32-S2` or `ESP32-S3` board is ready to use as a BLEDuck.
 
 # CIRCUITPY Directory Structure
 - **CIRCUITPY/**
@@ -96,7 +97,8 @@ Setup for ESP32-S2 & S3 boards to make a BLE-enabled USB Rubber Ducky.
 1. Open Notepad or any other text editor.
 2. Write your payload in it.
 3. When saving the file, select `CIRCUITPY`.
-4. Name the payload as `payload-1`, `payload-2` etc.
+4. Then go to the `payloads` folder.
+5. Name the payload as `payload-1`, `payload-2` etc.
    - It is saved by default as `.txt` files.
 
 # Mnemonic Table
