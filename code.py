@@ -130,7 +130,7 @@ while True:
         if uart.in_waiting:
             received = uart.read(uart.in_waiting).decode("utf-8").strip()
             if received.isdigit():
-                filename = f"payload_{received}.txt"
+                filename = f"/payloads/payload-{received}.txt"
                 hidScript = load_hid_script_from_file(filename)
                 if hidScript:
                     hid_execute(hidScript)
