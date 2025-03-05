@@ -1,4 +1,4 @@
-![BLEDuck](https://github.com/user-attachments/assets/be365a8f-138d-4d2c-a1a6-18afc5619ff0)
+![BLEDuck](https://github.com/user-attachments/assets/868c9a19-50f0-4040-a203-4de92b959ad8)
 
 # BLEDuck
 Setup for ESP32-S2 & S3 boards to make a BLE-enabled USB Rubber Ducky.
