@@ -9,10 +9,6 @@ Setup for ESP32-S2 & S3 boards to make a BLE-enabled USB Rubber Ducky.
 - Execute payloads by just sending numbers.
 - Store payloads in folder for better management.
 
-# OS Support
-- Windows 10
-- Android
-
 # Recommended
 - Use those ESP32-S2 & S3 boards which has at least `8MB` flash memory.
 
@@ -68,6 +64,7 @@ Setup for ESP32-S2 & S3 boards to make a BLE-enabled USB Rubber Ducky.
       - `adafruit_ble`
       - `adafruit_hid`
   - `code.py`
+  - `boot.py`
   - **payloads/**
     - `payload-X.txt`
   - where `X` is a number like `1`,`2`,`3`,`4` etc.
@@ -80,6 +77,8 @@ Setup for ESP32-S2 & S3 boards to make a BLE-enabled USB Rubber Ducky.
    - It ask for replacement of `code.py` file, then replace it.
    - It will overwrite in the `code.py` file.
    - After 2-3 minutes, an BLE device named `BLEDuck` is discovered.
+6. Copy `boot.py` in the `CIRCUITPY`.
+7. Replace `X` with pin numbers in LOC`7` of `boot.py` file.
 6. Turn on your mobile bluetooth.
 7. Open `Serial Bluetooth Terminal` app.
 8. Click on `☰`.
