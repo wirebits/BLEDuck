@@ -1,7 +1,7 @@
-<img width="480" height="480" alt="BLEDuck" src="https://github.com/user-attachments/assets/9a27426b-f0c5-435c-aeed-39dadd84e207" />
+<img width="2048" height="2048" alt="BLEDuck" src="https://github.com/user-attachments/assets/9a27426b-f0c5-435c-aeed-39dadd84e207" />
 
-# BLEDuck
-Setup for ESP32-S2 & S3 boards to make a BLE-enabled USB Rubber Ducky.
+# 🦆BLEDuck
+Setup for ESP32-S3 boards to make a BLE-enabled USB Rubber Ducky.
 
 # ✨Features
 - Minimal Setup.
@@ -9,54 +9,68 @@ Setup for ESP32-S2 & S3 boards to make a BLE-enabled USB Rubber Ducky.
 - Execute payloads by just sending numbers.
 - Store payloads in folder for better management.
 
-# Recommended
-- Use those ESP32-S2 & S3 boards which has at least `8MB` flash memory.
+# 👍Recommended
+- Use those ESP32-S3 boards which has at least `8MB` flash memory.
 
-# Setup of ESP32-S2 & ESP32-S3
+# ⚙️Setup ESP32-S3 boards for CircuitPython
 1. Open Official CircuitPython download link from [here](https://circuitpython.org/downloads).
-2. Search `ESP32-S2` or `ESP32-S3` according to the board you have.
+2. Search `ESP32-S3` according to the board you have.
 3. Select your board and click on it.
-4. At the end of the page, there is button named `DOWNLOAD BOOTLOADER ZIP`.
+4. At the end of the page, there is button named `DOWNLOAD BOOTLOADER combined.bin`.
 5. Click on it to download.
-6. Open that ZIP file.
-7. There is a file named `combined.bin`.
-8. Open Adafruit ESP Web Flasher from [here](https://adafruit.github.io/Adafruit_WebSerial_ESPTool/).
-9. Connect `ESP32-S2` or `ESP32-S3` with a USB cable.
-10. Connect to the PC/Laptop.
-11. Press and hold the `BOOT` button.
-12. Press and release the `RST` button.
-13. Release the `BOOT` button.
-14. Set the Baud Rate to `460800 Baud`.
-15. Click on `Connect` button.
-16. Select your Device COM Port in the Pop-Up Window.
-17. Click on `Connect` button in the Pop-Up Window.
+6. There is a file named `tinyuf2-<NAME-OF-BOARD>-0.35.0-combined.bin`.
+7. Open Adafruit ESP Web Flasher from [here](https://adafruit.github.io/Adafruit_WebSerial_ESPTool/).
+8. Connect `ESP32-S3` with a USB cable.
+9. Connect to the PC/Laptop.
+10. Press and hold the `BOOT` button.
+11. Press and release the `RST` button.
+12. Release the `BOOT` button.
+13. Set the Baud Rate to `460800 Baud`.
+14. Click on `Connect` button.
+15. Select your Device COM Port in the Pop-Up Window.
+16. Click on `Connect` button in the Pop-Up Window.
    - When connected successfully, then it show this ![image](https://github.com/user-attachments/assets/3dd86d85-df80-4d58-aba5-e078dc30212c)
-18. Click on `Erase` button.
-19. Wait for sometimes to successfully erased.
-20. Click on first one `Choose a file...`.
-21. Select the `combined.bin` file.
-22. Click on `Program` button.
-23. Wait for sometimes and after successfully flashed, press and release the `RST` button.
-24. Plug-out and then plug-in the USB cable.
-   - When it connects, then `ESP32-S2` or `ESP32-S3` board as a removable storage device `S3DKC1BOOT`.
-25. Done! Now, `ESP32-S2` or `ESP32-S3` Board is ready to flash CircuitPython `.uf2` file.
+17. Click on `Erase` button.
+18. Wait for sometimes to successfully erased.
+19. Click on first one `Choose a file...`.
+20. Select the `tinyuf2-<NAME-OF-BOARD>-0.35.0-combined.bin` file.
+21. Click on `Program` button.
+22. Wait for sometimes and after successfully flashed, press and release the `RST` or `RESET` button.
+23. Plug-out and then plug-in the USB cable.
+   - When it connects, then `ESP32-S3` board as a removable storage device `S3DKC1BOOT`.
+24. Done! Now, `ESP32-S3` Board is ready to flash CircuitPython `.uf2` file.
 
-# Setup of Circuit Python
+# ⚙️Setup CircuitPython
 1. Open Official CircuitPython download link from [here](https://circuitpython.org/downloads).
-2. Search `ESP32-S2` or `ESP32-S3` according to the board you have.
+2. Search `ESP32-S3` according to the board you have.
 3. Select your board and click on it.
-4. Download latest CircuitPython `.uf2` file.
-4. Copy the `.uf2` file into the `S3DKC1BOOT`.
+4. Download latest stable release CircuitPython `.uf2` file and noted its version.
+   - It is like `X.Y.Z`.
+   - Latest stable release is `9.2.8` but it can be changed in future so keep eye on it.
+5. Copy the `.uf2` file into the `S3DKC1BOOT`.
    - When it is copied, then it disconnects automatically and reconnect as `CIRCUITPY`.
-   - Means CircuitPython is successfully flashed in the `ESP32-S2` or `ESP32-S3` board.
-5. Open `CIRCUITPY`.
+   - Means CircuitPython is successfully flashed in the `ESP32-S3` board.
+
+# ⚙️Setup Essential Files for BLEDuck
+1. Download or Clone the Repository.
+2. Open the folder.
+   - Make sure that your `ESP32-S3` board is connected to your PC/Laptop.
+3. Copy `code.py` in the `CIRCUITPY`.
+   - It ask for replacement of `code.py` file, then replace it.
+   - It will overwrite in the `code.py` file.
+4. Copy `boot.py` in the `CIRCUITPY`.
+5. Download latest Adafruit CircuitPython Bundle from [here](https://circuitpython.org/libraries).
+   - There are 2 variants of libraries : `Bundles` and `The Community Bundle`.
+   - In `Bundles` variant, download latest stable Adafruit CircuitPython Bundle as noted version of `.uf2` file.
+   - Latest stable release is `adafruit-circuitpython-bundle-9.x-mpy-20250829.zip` but it can be changed in future so keep eye on it.
+6. Open `CIRCUITPY`.
    - There are two important things in it : `lib` folder and `code.py` file.
-6. Download latest Adafruit CircuitPython Bundle from [here](https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases).
-7. Extarct the ZIP file.
-8. Go to the `lib` folder in the extracted ZIP file.
-9. Copy `adafruit_ble` and `adafruit_hid` folders in the `lib` folder of `CIRCUITPY`.
-10. Create a folder named `payloads` in `CIRCUITPY`.
-11. Done! Now, `ESP32-S2` or `ESP32-S3` board is ready to use as a BLEDuck.
+7. Download latest Adafruit CircuitPython Bundle from [here](https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases).
+8. Extarct the ZIP file.
+9. Go to the `lib` folder in the extracted ZIP file.
+10. Copy `adafruit_ble` and `adafruit_hid` folders in the `lib` folder of `CIRCUITPY`.
+11. Create a folder named `payloads` in `CIRCUITPY`.
+12. Done! Now, `ESP32-S2` or `ESP32-S3` board is ready to use as a BLEDuck.
 
 # CIRCUITPY Directory Structure
 - **CIRCUITPY/**
@@ -69,7 +83,7 @@ Setup for ESP32-S2 & S3 boards to make a BLE-enabled USB Rubber Ducky.
     - `payload-X.txt`
   - where `X` is a number like `1`,`2`,`3`,`4` etc.
 
-# Install and Run
+# 🏃🏻‍♂️‍➡️Run BLEDuck
 1. Download or Clone the Repository.
 2. Open the folder.
 3. Make sure that your ESP32-S3 board is connected to your PC/Laptop.
