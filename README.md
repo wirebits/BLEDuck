@@ -8,6 +8,7 @@ A BLE-controlled USB Rubber Ducky clone built with ESP32-S3 boards.
 - Simply controlled by Serial Bluetooth Terminal App.
 - Execute payloads by just sending numbers.
 - Store payloads in folder for better management.
+- Hide / Unhide mass storage device for stealth.
 
 # 👍Recommended
 - Use those ESP32-S3 boards which has at least `8MB` flash memory.
@@ -18,27 +19,26 @@ A BLE-controlled USB Rubber Ducky clone built with ESP32-S3 boards.
 3. Select your board and click on it.
 4. At the end of the page, there is button named `DOWNLOAD BOOTLOADER combined.bin`.
 5. Click on it to download.
-6. There is a file named `tinyuf2-<NAME-OF-BOARD>-0.35.0-combined.bin`.
-7. Open Adafruit ESP Web Flasher from [here](https://adafruit.github.io/Adafruit_WebSerial_ESPTool/).
-8. Connect `ESP32-S3` with a USB cable.
-9. Connect to the PC/Laptop.
-10. Press and hold the `BOOT` button.
-11. Press and release the `RST` button.
-12. Release the `BOOT` button.
-13. Set the Baud Rate to `460800 Baud`.
-14. Click on `Connect` button.
-15. Select your Device COM Port in the Pop-Up Window.
-16. Click on `Connect` button in the Pop-Up Window.
+   - There is a file named `tinyuf2-<NAME-OF-BOARD>-0.35.0-combined.bin`.
+6. Open Adafruit ESP Web Flasher from [here](https://adafruit.github.io/Adafruit_WebSerial_ESPTool/).
+7. Connect `ESP32-S3` with a USB cable and then to the PC/Laptop.
+8. Press and hold the `BOOT` button.
+9. Press and release the `RST` button.
+10. Release the `BOOT` button.
+11. Set the Baud Rate to `460800 Baud`.
+12. Click on `Connect` button.
+13. Select your Device COM Port in the Pop-Up Window.
+14. Click on `Connect` button in the Pop-Up Window.
    - When connected successfully, then it show this ![image](https://github.com/user-attachments/assets/3dd86d85-df80-4d58-aba5-e078dc30212c)
-17. Click on `Erase` button.
-18. Wait for sometimes to successfully erased.
-19. Click on first one `Choose a file...`.
-20. Select the `tinyuf2-<NAME-OF-BOARD>-0.35.0-combined.bin` file.
-21. Click on `Program` button.
-22. Wait for sometimes and after successfully flashed, press and release the `RST` or `RESET` button.
-23. Plug-out and then plug-in the USB cable.
+15. Click on `Erase` button.
+16. Wait for sometimes to successfully erased.
+17. Click on first one `Choose a file...`.
+18. Select the `tinyuf2-<NAME-OF-BOARD>-0.35.0-combined.bin` file.
+19. Click on `Program` button.
+20. Wait for sometimes and after successfully flashed, press and release the `RST` or `RESET` button.
+21. Plug-out and then plug-in the USB cable in PC/Laptop.
    - When it connects, then `ESP32-S3` board as a removable storage device `S3DKC1BOOT`.
-24. Done! Now, `ESP32-S3` Board is ready to flash CircuitPython `.uf2` file.
+22. Done! Now, `ESP32-S3` Board is ready to flash CircuitPython `.uf2` file.
 
 # ⚙️Setup CircuitPython
 1. Open Official CircuitPython download link from [here](https://circuitpython.org/downloads).
@@ -90,7 +90,7 @@ A BLE-controlled USB Rubber Ducky clone built with ESP32-S3 boards.
     - `payload-X.txt`
   - where `X` is a number like `1`,`2`,`3`,`4` etc.
 
-# 🏃🏻‍♂️‍➡️Run BLEDuck
+# 🏃🏻‍♂Run BLEDuck
 1. Turn on your mobile bluetooth.
 2. Scan the bluetooth and it show `BLEDuck`.
 3. Connect and pair with it.
@@ -107,7 +107,7 @@ A BLE-controlled USB Rubber Ducky clone built with ESP32-S3 boards.
 14. Just type the number and click on Send button.
     - The payload of that number executes immediately.
 
-# Mnemonic Table
+# 💡Mnemonic Table
 | Mnemonics | Description | Example  |
 |-----------|-------------|----------|
 | WAIT      | It add time in the code.<br>Time is in milliseconds.<br>1000 ms = 1 second. | WAIT 1000 |
@@ -143,7 +143,7 @@ A BLE-controlled USB Rubber Ducky clone built with ESP32-S3 boards.
 `'` `,` `.` `/` `SPACE` `~` `_` `+` `{` `}` `|` `:` `"` `<` `>` `?` `0`
 `1` `2` `3` `4` `5` `6` `7` `8` `9`
 
-# Examples
+# 📖Examples
 ## Open notepad and type Hello World!
 
 ```
