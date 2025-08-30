@@ -1,9 +1,9 @@
-![BLEDuck](https://github.com/user-attachments/assets/868c9a19-50f0-4040-a203-4de92b959ad8)
+<img width="480" height="480" alt="BLEDuck" src="https://github.com/user-attachments/assets/9a27426b-f0c5-435c-aeed-39dadd84e207" />
 
 # BLEDuck
 Setup for ESP32-S2 & S3 boards to make a BLE-enabled USB Rubber Ducky.
 
-# Key Features
+# ✨Features
 - Minimal Setup.
 - Simply controlled by Serial Bluetooth Terminal App.
 - Execute payloads by just sending numbers.
