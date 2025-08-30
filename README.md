@@ -115,14 +115,14 @@ A BLE-controlled USB Rubber Ducky clone built with ESP32-S3 boards.
 | LOOP      | It runs commands for a certain number of times.<br> Synatx is `LOOP number-of-times commands` | LOOP 3<br>TYPE Hello World!<br>EXIT<br><br>LOOP 4<br>TAB<br>EXIT<br><br>LOOP 1<br>CTRL S<br>EXIT<br><br>LOOP 1<br>CTRL SHIFT N<br>EXIT<br> |
 | INF       | It run commans infinitely.<br>Syntax is `INF commands` | INF<br>TYPE Hello World!<br>EXIT<br><br>INF<br>TAB<br>EXIT<br> |
 
-# Special Symbols
+# 🔡Special Symbols
 1. `-`
 - It is used to put the cursor in the next line.
 - It is only used with TYPE.
 - Example : `TYPE Hello World!-`
 - If TYPE contain any command and then `-` then it run automatically without `ENTER` key.
 
-# Supported Mnemonics
+# 📝Supported Mnemonics
 ## Alphabet Keys
 `A` `B` `C` `D` `E` `F` `G` `H` `I` `J` `K` `L` `M` `N` `O`
 `P` `Q` `R` `S` `T` `U` `V` `W` `X` `Y` `Z`
