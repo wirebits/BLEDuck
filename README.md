@@ -8,7 +8,7 @@ A BLE-controlled USB Rubber Ducky clone built with ESP32-S3 boards.
 - Simply controlled by Serial Bluetooth Terminal App.
 - Execute payloads by just sending numbers.
 - Store payloads in folder for better management.
-- Hide / Unhide mass storage device for stealth.
+- Hide / Unhide mass storage device to work in stealth.
 
 # 👍Recommended
 - Use those ESP32-S3 boards which has at least `8MB` flash memory.
@@ -70,6 +70,13 @@ A BLE-controlled USB Rubber Ducky clone built with ESP32-S3 boards.
     - After 2-3 minutes, an BLE device named `BLEDuck` is discovered.
 9. Create a folder named `payloads` in `CIRCUITPY`.
 10. Done! Now, `ESP32-S3` board is ready to use as a BLEDuck.
+
+# 🔧Tweaks in boot.py
+- `boot.py` helps to hide / unhide mass storage device to work in stealth.
+- In `boot.py`, replace `X` with any pin number available on the board in `LOC 7`.
+- By default, the mass storage is hidden when `boot.py` is in `CIRCUITPY`.
+- To show mass storage, put jumper wire between that pin number mentioned in `boot.py` and `GND` and press and release the `RST` or `RESET` button.
+- To hide mass storage, just remove jumper wire between them and press and release the `RST` or `RESET` button.
 
 # 📄Payload Files
 1. Open Notepad or any other text editor.
