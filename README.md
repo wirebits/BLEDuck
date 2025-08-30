@@ -1,7 +1,7 @@
 <img width="2048" height="2048" alt="BLEDuck" src="https://github.com/user-attachments/assets/9a27426b-f0c5-435c-aeed-39dadd84e207" />
 
 # 🦆BLEDuck
-Setup for ESP32-S3 boards to make a BLE-enabled USB Rubber Ducky.
+A BLE-controlled USB Rubber Ducky clone built with ESP32-S3 boards.
 
 # ✨Features
 - Minimal Setup.
@@ -50,6 +50,7 @@ Setup for ESP32-S3 boards to make a BLE-enabled USB Rubber Ducky.
 5. Copy the `.uf2` file into the `S3DKC1BOOT`.
    - When it is copied, then it disconnects automatically and reconnect as `CIRCUITPY`.
    - Means CircuitPython is successfully flashed in the `ESP32-S3` board.
+6. Done! Now, `ESP32-S3` Board is flashed with CircuitPython `.uf2` file.
 
 # ⚙️Setup Essential Files for BLEDuck
 1. Download or Clone the Repository.
@@ -63,16 +64,22 @@ Setup for ESP32-S3 boards to make a BLE-enabled USB Rubber Ducky.
    - There are 2 variants of libraries : `Bundles` and `The Community Bundle`.
    - In `Bundles` variant, download latest stable Adafruit CircuitPython Bundle as noted version of `.uf2` file.
    - Latest stable release is `adafruit-circuitpython-bundle-9.x-mpy-20250829.zip` but it can be changed in future so keep eye on it.
-6. Open `CIRCUITPY`.
-   - There are two important things in it : `lib` folder and `code.py` file.
-7. Download latest Adafruit CircuitPython Bundle from [here](https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases).
-8. Extarct the ZIP file.
-9. Go to the `lib` folder in the extracted ZIP file.
-10. Copy `adafruit_ble` and `adafruit_hid` folders in the `lib` folder of `CIRCUITPY`.
-11. Create a folder named `payloads` in `CIRCUITPY`.
-12. Done! Now, `ESP32-S2` or `ESP32-S3` board is ready to use as a BLEDuck.
+6. Extarct the ZIP file.
+7. Go to the `lib` folder in the extracted ZIP file.
+8. Copy `adafruit_ble` and `adafruit_hid` folders in the `lib` folder of `CIRCUITPY`.
+    - After 2-3 minutes, an BLE device named `BLEDuck` is discovered.
+9. Create a folder named `payloads` in `CIRCUITPY`.
+10. Done! Now, `ESP32-S3` board is ready to use as a BLEDuck.
 
-# CIRCUITPY Directory Structure
+# 📄Payload Files
+1. Open Notepad or any other text editor.
+2. Write your payload in it.
+3. When saving the file, select `CIRCUITPY`.
+4. Then go to the `payloads` folder.
+5. Name the payload as `payload-1`, `payload-2` etc.
+   - It is saved by default as `.txt` files.
+
+# 🧩CIRCUITPY Directory Structure
 - **CIRCUITPY/**
   - **lib/**
       - `adafruit_ble`
@@ -84,17 +91,11 @@ Setup for ESP32-S3 boards to make a BLE-enabled USB Rubber Ducky.
   - where `X` is a number like `1`,`2`,`3`,`4` etc.
 
 # 🏃🏻‍♂️‍➡️Run BLEDuck
-1. Download or Clone the Repository.
-2. Open the folder.
-3. Make sure that your ESP32-S3 board is connected to your PC/Laptop.
-5. Copy `code.py` in the `CIRCUITPY`.
-   - It ask for replacement of `code.py` file, then replace it.
-   - It will overwrite in the `code.py` file.
-   - After 2-3 minutes, an BLE device named `BLEDuck` is discovered.
-6. Copy `boot.py` in the `CIRCUITPY`.
-7. Replace `X` with pin numbers in LOC`7` of `boot.py` file.
-6. Turn on your mobile bluetooth.
-7. Open `Serial Bluetooth Terminal` app.
+1. Turn on your mobile bluetooth.
+2. Scan the bluetooth and it show `BLEDuck`.
+3. Connect and pair with it.
+4. Download `Serial Bluetooth Terminal` app from [here](https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal).
+5. Open `Serial Bluetooth Terminal` app.
 8. Click on `☰`.
 9. Click on `Devices`.
 10. Click on `Bluetooth LE`.
@@ -105,14 +106,6 @@ Setup for ESP32-S3 boards to make a BLE-enabled USB Rubber Ducky.
 13. After that, when it show `Connected` it means ready to execute payloads using BLE.
 14. Just type the number and click on Send button.
     - The payload of that number executes immediately.
-
-# Payload Files
-1. Open Notepad or any other text editor.
-2. Write your payload in it.
-3. When saving the file, select `CIRCUITPY`.
-4. Then go to the `payloads` folder.
-5. Name the payload as `payload-1`, `payload-2` etc.
-   - It is saved by default as `.txt` files.
 
 # Mnemonic Table
 | Mnemonics | Description | Example  |
