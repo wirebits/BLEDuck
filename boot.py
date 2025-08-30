@@ -1,5 +1,5 @@
 # BLEDuck boot.py file
-# Setup for hide /unhide mass storage device.
+# Setup for hide / unhide mass storage device.
 # Author - WireBits
 
 import board, storage, digitalio
