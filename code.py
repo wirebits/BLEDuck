@@ -1,5 +1,5 @@
 # BLEDuck
-# Setup for ESP32-S3 boards to make a BLE-enabled USB Rubber Ducky.
+# A BLE-controlled USB Rubber Ducky clone built with ESP32-S3 boards.
 # Author - WireBits
 
 import os
