@@ -1,5 +1,5 @@
 # BLEDuck boot.py file
-# Setup for ESP32-S3 boards to make a BLE-enabled USB Rubber Ducky.
+# Setup for hide /unhide mass storage device.
 # Author - WireBits
 
 import board, storage, digitalio
