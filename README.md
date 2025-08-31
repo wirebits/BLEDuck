@@ -9,9 +9,14 @@ A BLE-controlled USB Rubber Ducky clone built with ESP32-S3 boards.
 - Execute payloads by just sending numbers.
 - Store payloads in folder for better management.
 - Hide / Unhide mass storage device to work in stealth.
+- Manual control for advertisment of device.
 
 # 👍Recommended
 - Use those ESP32-S3 boards which has at least `8MB` flash memory.
+
+# 📦Requirements
+- `1` ESP32-S3 Board
+- `1` Micro-B USB / Type-C USB Cable with data transfer support
 
 # ⚙️Setup ESP32-S3 boards for CircuitPython
 1. Open Official CircuitPython download link from [here](https://circuitpython.org/downloads).
