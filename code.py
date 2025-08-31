@@ -13,6 +13,8 @@ from adafruit_ble.services.nordic import UARTService
 from adafruit_hid.keyboard_layout_us import KeyboardLayoutUS
 from adafruit_ble.advertising.standard import ProvideServicesAdvertisement
 
+payload_dir = "/payloads/"
+
 ble = BLERadio()
 uart = UARTService()
 advertisement = ProvideServicesAdvertisement(uart)
@@ -20,6 +22,8 @@ advertisement = ProvideServicesAdvertisement(uart)
 DEVICE_NAME = "BLEDuck"
 advertisement.complete_name = DEVICE_NAME
 
+ADVERTISE_TIMEOUT = 60
+start_time = time.monotonic()
 ble.start_advertising(advertisement)
 
 kbd = Keyboard(usb_hid.devices)
@@ -53,7 +57,7 @@ def convertHID(hidLine):
         elif hasattr(Keycode, key):
             newline.append(getattr(Keycode, key))
         else:
-            print("Unknown key! Try another key!")
+            print("[-] Unknown key! Try another key!")
     return newline
 
 def keyTrigger(hidLine):
@@ -114,9 +118,9 @@ def hid_execute(hidScript):
         progStatus = True
         generateHID(hidScript)
         progStatus = False
-        print("Done")
+        print("[+] Payload Executed!")
     else:
-        print("Update your payload and start again!")
+        print("[-] Update your payload and start again!")
 
 def load_hid_script_from_file(filename):
     try:
@@ -130,10 +134,20 @@ while True:
         if uart.in_waiting:
             received = uart.read(uart.in_waiting).decode("utf-8").strip()
             if received.isdigit():
-                filename = f"/payloads/payload-{received}.txt"
+                filename = f"{payload_dir}payload-{received}.txt"
                 hidScript = load_hid_script_from_file(filename)
                 if hidScript:
                     hid_execute(hidScript)
         time.sleep(0.1)
+
     else:
+        elapsed = time.monotonic() - start_time
+        if elapsed > ADVERTISE_TIMEOUT:
+            if ble.advertising:
+                print("[-] Advertising stopped due to timeout!")
+                ble.stop_advertising()
+        else:
+            if not ble.advertising:
+                print("[+] Advertising Started!")
+                ble.start_advertising(advertisement)
         time.sleep(1)
