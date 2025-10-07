@@ -4,7 +4,7 @@
 
 import board, storage, digitalio
 
-button=digitalio.DigitalInOut(board.IOX)
+button=digitalio.DigitalInOut(board.GPX)
 button.switch_to_input(pull=digitalio.Pull.UP)
 
 if button.value:
