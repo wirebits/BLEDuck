@@ -11,6 +11,104 @@ A BLE-controlled USB Rubber Ducky clone built with ESP32-S3 boards.
 - Hide / Unhide mass storage device to work in stealth.
 - Manual control for advertisment of device.
 
+# 📋List of ESP32S3 boards
+- These boards supports native `BLE` and `HID`.
+- It also supports `combined.bin` file to make board into CircuitPython board.
+1. YD-ESP32-S3 N16R8 By _VCC-GND Studio_
+2. MatrixPortal S3 By _Adafruit_
+3. ESP32-S3-DevKitC-1-N8 By _Espressif_
+4. Waveshare ESP32-S3-Zero By _Waveshare_
+5. ESP32-S3 Reverse TFT Feather By _Adafruit_
+6. Feather ESP32-S3 4MB Flash 2MB PSRAM By _Adafruit_
+7. Seeed Studio XIAO ESP32S3 Sense By _Seeed Studio_
+8. Adafruit QT Py ESP32-S3 4MB Flash/2MB PSRAM By _Adafruit_
+9. M5Stack CardPuter - M5StampS3 powered mini computer By _M5Stack_
+10. T-Dongle S3 By _LILYGO_
+11. ESP32-S3-DevKitC-1-N16 By Espressif
+12. Adafruit QT Py ESP32-S3 8MB Flash No PSRAM By Adafruit
+13. Qualia ESP32-S3 for TTL RGB-666 Displays By Adafruit
+14. Feather ESP32-S3 TFT PSRAM By Adafruit
+15. Feather ESP32-S3 8MB Flash No PSRAM By Adafruit
+16. T-Display S3 By LILYGO
+17. ESP32S3-TOUCH-LCD-2 By Waveshare
+18. ESP32-S3-DevKitC-1-N8R8 By Espressif
+19. ESP32-S3-DevKitC-1-N8R2 By Espressif
+20. ESP32-S3-Matrix Development Board By Waveshare
+21. MEMENTO - Python Programmable DIY Camera By Adafruit
+22. T-Deck (Plus) By LILYGO
+23. ESP32-S3-GEEK By Waveshare
+24. T-Embed By LILYGO
+25. Unexpected Maker FeatherS3 By Unexpected Maker
+26. AtomS3 Dev Kit w/ 0.85-inch Screen By M5Stack
+27. T-Watch S3 By LILYGO
+28. Nano ESP32 By Arduino
+29. Metro ESP32-S3 By Adafruit
+30. ESP32-S3-DevKitM-1-N8 By Espressif
+31. Unexpected Maker TinyS3 By Unexpected Maker
+32. Unexpected Maker ProS3 By Unexpected Maker
+33. ESP32-S3-Tiny By Waveshare
+34. ESP32-S3-Pico By Waveshare
+35. ESP32-S3-EYE By Espressif
+36. AtomS3 Lite ESP32S3 Dev Kit By M5Stack
+37. ESP32-S3-USB-OTG-N8 By Espressif
+38. ESP32-S3 ETH Development Board By Waveshare
+39. Dial - Smart Rotary Knob with Touch Screen By M5Stack
+40. ESP32-S3-DevKitC-1-N32R8 By Espressif
+41. YD-ESP32-S3 N8R8 By VCC-GND Studio
+42. BPI-PicoW-S3 By Banana Pi
+43. Vision Master E290 By Heltec Automation
+44. Bee Data Logger By Smart Bee Designs
+45. M5Stamp S3 By M5Stack
+46. LOLIN S3 Pro By Wemos
+47. ESP32-S3 LCD Evaluation Kit By Espressif
+48. ThingPulse Pendrive S3 By ThingPulse
+49. LOLIN S3 By Wemos
+50. ESP32-S3 LCD Evaluation Kit v1.5 By Espressif
+51. LOLIN S3 MINI By Wemos
+52. T-Display S3 Pro By LILYGO
+53. Unexpected Maker TinyWATCH S3 By Unexpected Maker
+54. LOLIN S3 MINI PRO By Wemos
+55. Nano ESP32 with inverted Status LED By Arduino
+56. CoreS3 ESP32 IoT By M5Stack
+57. Unexpected Maker RGBTouch Mini By Unexpected Maker
+58. BrainBoardz Neuron By BrainBoardz Inc.
+59. MaTouch ESP32-S3 Parallel TFT with Touch 7“ By Makerfabs
+60. Unexpected Maker OMGS3 By Unexpected Maker
+61. Unexpected Maker Blizzard S3 By Unexpected Maker
+62. Maker Feather AIoT S3 By Cytron Technologies
+63. TQ-T Pro (with PSRAM) By LILYGO
+64. FireBeetle 2 ESP32-S3 By DFRobot
+65. ESP32-S3 Box Lite By Espressif
+66. MagiClick S3 By MakerM0
+67. Deneyap Kart 1A v2 By Turkish Technology Team Foundation
+68. ESP32-S3 1.47inch Display Development Board By Waveshare
+69. Unexpected Maker FeatherS3 Neo By Unexpected Maker
+70. WiFi LoRa 32 V3 By Heltec Automation
+71. Unexpected Maker NanoS3 By Unexpected Maker
+72. ESP32-S3 Box By Espressif
+73. AtomS3U ESP32S3 Dev Kit By M5Stack
+74. TQ-T Pro (No PSRAM) By LILYGO
+75. Bee Motion S3 By Smart Bee Designs
+76. BPI-Leaf-S3 By Banana Pi
+77. Sunton ESP32-8048S070 By Sunton
+78. CircuitArt ESP32S3 Zero By CircuitArt
+79. Barduino By Fablab Barcelona
+80. ESP32-S3 HackTablet By Kevin Matocha
+81. Unexpected Maker Bling By Unexpected Maker
+82. Bee S3 By Smart Bee Designs
+83. ESP32S3-LCD-1.28 By Waveshare
+84. Sunton ESP32-8048S050 By Sunton
+85. Elecrow CrowPanel 4.2 By Elecrow
+86. Heltec Wireless Paper By Heltec Automation
+87. M5Stack CardPuter - M5StampS3 powered mini computer (MicroROS) By M5Stack
+88. ESP32-S3-DevKitC-1-N8R2 (MicroROS) By Espressif
+89. Unexpected Maker EdgeS3[D] By Unexpected Maker
+90. AI-On-The-Edge-Cam By Prokyber
+91. M5Stack Din Meter w/ M5StampS3 By M5Stack
+92. ESP32S3-TOUCH-LCD-2.8 By Waveshare
+93. ESP32-S3-Touch-LCD-1.47 By Waveshare
+94. Seeed Studio XIAO ESP32S3 By Seeed Studio
+
 # 👍Recommended
 - Use those ESP32-S3 boards which has at least `8MB` flash memory.
 
