@@ -218,7 +218,7 @@ A BLE-controlled USB Rubber Ducky clone built with ESP32-S3 boards.
     - The payload of that number executes immediately.
 
 # 🏃🏻‍♂Run BLEDuck using BLEDuck App
-1. Download BLEDuck App from [here]().
+1. Download BLEDuck App from [here](https://github.com/wirebits/BLEDuck/releases/download/v1.0/BLEDuck.apk).
 2. Simply install it.
 3. Turn on your mobile bluetooth.
 4. Open the app.
