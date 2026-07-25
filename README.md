@@ -200,7 +200,7 @@ A BLE-controlled USB Rubber Ducky clone built with ESP32-S3 boards.
     - `payload-X.txt`
   - where `X` is a number like `1`,`2`,`3`,`4` etc.
 
-# 🏃🏻‍♂Run BLEDuck
+# 🏃🏻‍♂Run BLEDuck using Serial Bluetooth Terminal
 1. Turn on your mobile bluetooth.
 2. Scan the bluetooth and it show `BLEDuck`.
 3. Connect and pair with it.
@@ -215,6 +215,21 @@ A BLE-controlled USB Rubber Ducky clone built with ESP32-S3 boards.
 12. Click on it.
 13. After that, when it show `Connected` it means ready to execute payloads using BLE.
 14. Just type the number and click on Send button.
+    - The payload of that number executes immediately.
+
+# 🏃🏻‍♂Run BLEDuck using BLEDuck App
+1. Download BLEDuck App from [here]().
+2. Simply install it.
+3. Turn on your mobile bluetooth.
+4. Open the app.
+5. Click on `Grant Permissions`.
+6. Choose `Allow` to find, connect and determine nearby devices.
+7. Click on `Scan BLE Devices` button.
+   - Wait for sometimes and show `BLEDuck`.
+8. Click on `Connect Device`.
+9. Click on `Enter Payload Number`.
+10. Enter your payload number.
+11. Click on `Run` button.
     - The payload of that number executes immediately.
 
 # 💡Mnemonic Table
